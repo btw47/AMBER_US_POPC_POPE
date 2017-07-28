@@ -49,7 +49,7 @@ LISTOUT=POUT
 			with open('%s%s%s.script' % (wd, i, x), 'w') as f1:
 				f1.write('''#!/bin/bash
 #SBATCH --job-name=%s_%s_POPE_%s
-#SBATCH --time=5:00:00
+#SBATCH --time=7:00:00
 #SBATCH --ntasks=48
 #SBATCH --nodes=2
 %s
@@ -111,7 +111,7 @@ LISTOUT=POUT
 			with open('%s%s%s.script' % (wd, i, x), 'w') as f1:
 				f1.write('''#!/bin/bash
 #SBATCH --job-name=%s_%s_POPE_%s
-#SBATCH --time=5:00:00
+#SBATCH --time=7:00:00
 #SBATCH --ntasks=48
 #SBATCH --nodes=2
 %s
