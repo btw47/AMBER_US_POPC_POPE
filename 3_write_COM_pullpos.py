@@ -37,7 +37,7 @@ if len(iters) > 0:
 	hi_iter = max(iters)
 	next_iter = hi_iter + 1
 	
-	dist = os.popen('tail -n 1 05_Pull_distneg%s.dat' % hi_iter).read().split()[1]	
+	dist = os.popen('tail -n 1 05_Pull_distpos%s.dat' % hi_iter).read().split()[1]	
 	end_dist = float(dist) + 3.2
 	with open('COM_pull_pos%s.RST' % next_iter, 'w') as ff:
 		ff.write('''&rst
